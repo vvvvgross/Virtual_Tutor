@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Заголовок страницы (изменился на моральную версию) -->
+        <title>Virtual Tutor Assistant (Moral)</title>
+        <!-- Иконка сайта -->
+        <link rel="icon" type="image/x-icon" href="./favicon.ico">
+        <!-- Подключение CSS стилей -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <!-- Основной контейнер с grid-разметкой -->
+    <div class="grid-container">
+      <!-- Контейнер для работы с эссе (левая часть) -->
+      <div class="essay-container">
+        <div class="editor-label">Эссе</div>
+        <!-- Текстовое поле для ввода эссе -->
+        <textarea id="essayEditor" class="text-editor" placeholder="Write your essay here..."></textarea>
+        <!-- Кнопка отправки эссе -->
+        <div class="controls">
+          <button onclick="submitEssay()">Отправить</button>
+        </div>
+      </div>
+    
+      <!-- Контейнер для диалога с тьютором (правая часть) -->
+      <div class="dialog-container">
+        <div class="editor-label">Диалог с тьютором</div>
+        <!-- Область для отображения сообщений чата -->
+        <div id="chatMessages" class="chat-messages">
+          <!-- Индикатор набора сообщения (отображается когда тьютор "печатает") -->
+          <div class="typing-indicator">
+            <div class="typing-dots">
+              <span></span><span></span><span></span>
+            </div>
+            Виртуальный тьютор печатает...
+          </div>
+        </div>
+        <!-- Текстовое поле для ввода сообщения -->
+        <textarea id="dialogEditor" class="text-editor chat-input" placeholder="Type your message to tutor here..."></textarea>
+        <!-- Кнопка отправки сообщения -->
+        <div class="controls">
+          <button onclick="submitDialog()">Отправить</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Подключение JavaScript файла -->
+    <script src="script.js"></script>
+    </body>
+</html>

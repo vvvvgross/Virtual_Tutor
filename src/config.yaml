@@ -1,0 +1,15 @@
+auth:
+  url: https://api.deepseek.com  # Замените на URL вашего прокси к API Deepseek
+  token: sk-...  # Замените на ваш API ключ Deepseek
+
+run_mode: local  # Режим запуска: local (локальный) или server (серверный)
+
+running:
+  local:
+    host: 127.0.0.1  # Хост для локального запуска (localhost)
+    port: 8000  # Порт для локального запуска
+
+  server:
+    host: 0.0.0.0  # Хост для серверного запуска
+    port: 8000  # Порт для серверного запуска
+    ws_root: /ws  # Корневой путь для WebSocket
